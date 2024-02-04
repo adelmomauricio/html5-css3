@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #E66108;
+    --cor2: #3ddc84;
+    --cor3: #000764;
+    --cor4: #0D0B96;
+    --cor5: #c5c3ff;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor5);
+    color: black;
+    font-family: var(--fonte-padrao);
+}
+
+/* Começo do Cabeçalho */
+
+header {
+    background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+    min-height: 100px;
+    position: relative;
+    box-shadow: inset 1px 1px 14px 6px rgb(12, 1, 58);
+}
+
+header > #logo {
+    display: inline-block;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+header > #linelogo {
+    background-image: linear-gradient(to right, #077e2b, #03056b);
+    width: auto;
+    position: relative;
+    top: 60px;
+    left: 78px;
+    height: 1.8px;
+    z-index: 2;
+}
+
+
+header > #nomelogo {
+    color: var(--cor1);
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    left: 85px;
+    z-index: 1;
+}
+header > #nomeline {
+    color: var(--cor1);
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 85px;
+    z-index: 3;
+}
+
+#login {
+    text-decoration: none;
+    font-size: 0.85em;
+    color: var(--cor1);
+    padding: 3px;
+    position: absolute; 
+    right: 90px;
+    top: 5px;   
+}
+
+#cadastrar {
+    text-decoration: none;
+    font-size: 0.85em;
+    color: var(--cor1);
+    padding: 3px;
+    position: absolute;  
+    right: 20px;  
+    top: 5px;
+}
+
+header > #login:hover {
+    background-color: #3ddc84;
+    color: #077e2b;
+}
+
+header > #cadastrar:hover {
+    background-color: #3ddc84;
+    color: #077e2b;
+}
+
+header > #login:active {
+    background-color: #077e2b;
+    color: var(--cor1);
+}
+
+header > #cadastrar:active {
+    background-color: #077e2b;
+    color: var(--cor1);
+}
+
+/* Começo da Navegação */
+
+nav {
+    background-color: var(--cor3);
+    padding: 5px;
+    box-shadow: inset 1px 1px 14px 6px rgb(12, 1, 58);
+    position: center;
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+/* Começo da Main */
+
+
+/* Começo do rodapé */
+footer {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8en;
+    padding: 5px;
+}
