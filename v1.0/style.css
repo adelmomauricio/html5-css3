@@ -274,9 +274,10 @@ footer > p {
 }
 
 footer > #direitos {
-    position: fixed;
-    bottom: 10px;
-    right: 5px;
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 0.75rem;
     padding: 0;
     color: var(--cor0);
