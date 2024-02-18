@@ -257,8 +257,6 @@ footer {
     height: 50px;
     box-shadow: 10px 0 10px var(--cor5);
     max-height: auto;
-    min-width: 200px;
-    max-width: auto;
     padding: 10px;
 }
 
