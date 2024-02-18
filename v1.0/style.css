@@ -11,7 +11,7 @@
     --cor1: #ff5d1d;
     --cor2: #0269f0;
     --cor3: #003793;
-    --cor4: #16191a;
+    --cor4: #1d2023;
     --cor5: #131718;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -39,8 +39,8 @@ header {
 }
 
 header > div >a > h1 {
-    padding: 2px;
-    font-size: 50px;
+    padding: 7px;
+    font-size: 45px;
     color: var(--cor1);
     font-family: var(--fonte-destaque);
     display: inline-block;
@@ -60,7 +60,7 @@ header > div >a > p {
     display: inline-block;
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 75px;
     color: var(--cor1);
     text-shadow: 2px 2px 2px var(--cor3);
 }
@@ -91,63 +91,78 @@ header > div >a > p {
 /* Menu de Navegação */
 
 nav {
-    padding: 10px 0 10px 10px;
+    padding: 5px;
     background-color: var(--cor5);
-    display: flex;
+    box-shadow: 0px 3px 3px var(--cor5);
 }
 
-nav > ul {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+.material-symbols-outlined {
+    padding: 0;
+    position: relative;
+    top: 3px;
 }
 
-nav > ul > a {
+
+nav > ul > li  > a {
+    display: inline-block;
     background-color: var(--cor4);
+    text-decoration: none;
+    color: var(--cor2);
+    border-radius: 8px;
+    padding: 3px 3px 3px 3px;
+    z-index: 1;
+}
+
+nav > ul > li  > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+nav > ul > li  > a:active {
+    color: var(--cor1);
+}
+
+
+nav ul li {
+    display: contents;
+}
+
+.dropdown-menu {
+    display: grid;
+    position: absolute;
+    background-color: var(--cor5);
     padding: 5px;
+    z-index: 2;
+    border: 2px solid var(--cor5);
+
+}
+
+.dropdown-menu > a {
+    text-decoration: none;
+    color: var(--cor2);
+    padding: 3px;
+    z-index: 2;
+    background-color: var(--cor4);
+    border-bottom: 1px solid var(--cor5);
     border-radius: 5px;
-    text-decoration: none;
-    color: #0269f0;
-    
-    flex: 2px 0px 15px;
-    
+    margin-bottom: 2px;
 }
 
-nav > ul > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor2);
-}
-
-nav > ul > a > #menu {
-    height: 15px;
-    width: auto;
-    position: relative;
-    top: 2px;
-}
-
-nav ul a div {
-    position: absolute;
-    display: block;
-}
-
-#menu_suspenso {
-    position: absolute;
-    display: -ms-inline-grid;
-}
-
-#menu_suspenso > a {
-    display: block;
-    position: relative;
-    top: 30px;
-    background-color: var(--cor3);
-    color: var(--cor2);
-    text-decoration: none;
-    padding: 5px;
-    margin-bottom: 1px;
-}
-
-#menu_suspenso > a {
+.dropdown-menu {
     display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: grid;
+}
+
+.dropdown-menu:hover a:hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+.dropdown-menu:hover a:active {
+    color: var(--cor1);
 }
 
 /* Contéudo */
@@ -171,6 +186,7 @@ footer {
     background-color: var(--cor5);
     width: 100%;
     height: 50px;
+    box-shadow: 10px 0 10px var(--cor5);
 }
 
 footer > h2 {
