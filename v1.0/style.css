@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #E66108;
+    --cor2: #0269f0;
+    --cor3: #003793;
+    --cor4: #16191a;
+    --cor5: #131718;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android';
+}
+
+/* Configuração do Body */
+body {
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    min-height: 80px;
+    max-height: auto;
+    min-width: 400px;
+    max-width: auto;
+    position: relative;
+    box-shadow: 0px 2px 2px var(--cor3);
+}
+
+header >div > h1 {
+    padding: 2px;
+    font-size: 50px;
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px var(--cor3);
+    text-shadow: 1px 1px 2px var(--cor2);
+}
+
+header > div > p {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: var(--cor1);
+    text-shadow: 2px 2px 2px var(--cor3);
+}
+
+/* Menu de Navegação */
+
+nav {
+    padding: 10px 0 10px 10px;
+    background-color: var(--cor5);
+    border: 2px solid var(--cor4);
+    display: flex;
+}
+
+nav > ul {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+nav > ul > a {
+    background-color: var(--cor4);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0269f0;
+    
+    flex: 2px 0px 15px;
+    
+}
+
+nav > ul > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+nav > ul > a > #menu {
+    height: 15px;
+    width: auto;
+    position: relative;
+    top: 2px;
+}
+
+/* Contéudo */
+
+main {
+    position: relative;
+    padding: 10px;
+}
+
+main > p {
+    position: relative;
+    padding: 10px 0 10px 0;
+    
+}
+
+/* Rodapé */
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--cor5);
+    width: 100%;
+    height: 50px;
+}
+
+footer > h2 {
+    color: var(--cor2);
+    font-size: 0.9rem;
+    padding: 5px 0 5px 0;
+    display: inline-block;
+}
+
+footer > p {
+    font-size: 0.9rem;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer > #direitos {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    font-size: 0.75rem;
+    padding: 0;
+    color: var(--cor2);
+}
