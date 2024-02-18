@@ -68,7 +68,6 @@ header > div > p {
 nav {
     padding: 10px 0 10px 10px;
     background-color: var(--cor5);
-    border: 2px solid var(--cor4);
     display: flex;
 }
 
